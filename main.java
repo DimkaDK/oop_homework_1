@@ -54,11 +54,12 @@ public class main {
 
         bro2.add(human1);
                
-        System.out.println(human1);
-        System.out.println(human2);
-        System.out.println(human3);
-        System.out.println(human4);
-        System.out.println(human5);
+       FamilyTree familyTree1 = new FamilyTree(human2);
+       System.out.println(familyTree1);
+       FamilyTree familyTree2 = new FamilyTree(human1);
+       System.out.println(familyTree2);      
+       FamilyTree familyTree3 = new FamilyTree(human3);
+       System.out.println(familyTree3);
     }
     
 }

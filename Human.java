@@ -15,6 +15,7 @@ public class Human {
     private Human father;
     private List<Human> children;
     private List<Human> bro;
+   
 
     public Human(String surname, String patronymic, String name, Calendar dateOfBirth, Calendar dateOfDeath, Human mother, Human father, List<Human> children, List<Human> bro) {
         this.name = name;
@@ -73,15 +74,15 @@ public class Human {
     public List<Human> getChildren() {
         return children;
     }
+    public void setChildren(List<Human> children) {
+        this.children = children;
+    }
     public void setBro(List<Human> bro) {
         this.bro = bro;
     }
     public List<Human> getBro() {
         return bro;
-    }
-    public void setChildren(List<Human> children) {
-        this.children = children;
-    }
+    }    
 
     public String getFio() {
         return surname + " " + name + " " + patronymic;
